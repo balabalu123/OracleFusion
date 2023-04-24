@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on win32)" generated="20230424 20:16:10.267" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCases" source="C:\Users\balua\PycharmProjects\OracleFusion\specs\TestCases.robot">
+<test id="s1-t1" name="Loginpage" line="10">
+<kw name="Open my Browser" library="Resources">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230424 20:16:11.170" level="INFO">Opening browser 'chrome' to base url 'https://fa-esev-saasfademo1.ds-fa.oraclepdemos.com/hcmUI/faces/FuseWelcome'.</msg>
+<status status="PASS" starttime="20230424 20:16:11.168" endtime="20230424 20:16:20.040"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230424 20:16:20.040" endtime="20230424 20:16:20.193"/>
+</kw>
+<status status="PASS" starttime="20230424 20:16:11.167" endtime="20230424 20:16:20.194"/>
+</kw>
+<kw name="Enter Username" library="Resources">
+<arg>${Username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_username}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230424 20:16:20.198" level="INFO">Typing text 'HCM_IMPL12' into text field 'xpath://input[@placeholder='User ID']'.</msg>
+<status status="PASS" starttime="20230424 20:16:20.195" endtime="20230424 20:16:20.494"/>
+</kw>
+<status status="PASS" starttime="20230424 20:16:20.194" endtime="20230424 20:16:20.495"/>
+</kw>
+<kw name="Enter Password" library="Resources">
+<arg>${Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230424 20:16:20.497" level="INFO">Typing text 'dYe7i^6?' into text field 'xpath://input[@placeholder='Password']'.</msg>
+<status status="PASS" starttime="20230424 20:16:20.496" endtime="20230424 20:16:20.717"/>
+</kw>
+<status status="PASS" starttime="20230424 20:16:20.495" endtime="20230424 20:16:20.717"/>
+</kw>
+<kw name="click signin button" library="Resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${signin_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230424 20:16:20.718" endtime="20230424 20:16:21.017"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${signin_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230424 20:16:21.019" level="INFO">Clicking button 'xpath://button[text()='  Sign In ']'.</msg>
+<status status="PASS" starttime="20230424 20:16:21.018" endtime="20230424 20:16:21.675"/>
+</kw>
+<status status="PASS" starttime="20230424 20:16:20.717" endtime="20230424 20:16:21.677"/>
+</kw>
+<status status="PASS" starttime="20230424 20:16:11.165" endtime="20230424 20:16:21.678"/>
+</test>
+<test id="s1-t2" name="Navigate to Quick Actions" line="17">
+<kw name="click myclient groups" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${my_client_groups}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230424 20:16:21.684" level="INFO">Clicking element 'xpath://a[text()='My Client Groups']'.</msg>
+<msg timestamp="20230424 20:16:21.935" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230424 20:16:21.935" level="FAIL">Element with locator 'xpath://a[text()='My Client Groups']' not found.</msg>
+<status status="FAIL" starttime="20230424 20:16:21.683" endtime="20230424 20:16:21.939"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${my_client_groups}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:21.940" endtime="20230424 20:16:21.940"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${my_client_groups}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:21.940" endtime="20230424 20:16:21.940"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:21.682" endtime="20230424 20:16:21.941"/>
+</kw>
+<kw name="scroll down" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:21.941" endtime="20230424 20:16:21.941"/>
+</kw>
+<kw name="Show more button" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:21.941" endtime="20230424 20:16:21.941"/>
+</kw>
+<kw name="Create work relationship" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:21.942" endtime="20230424 20:16:21.942"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:21.680" endtime="20230424 20:16:21.942">Element with locator 'xpath://a[text()='My Client Groups']' not found.</status>
+</test>
+<test id="s1-t3" name="create work relationship" line="22">
+<kw name="click search persons button" library="Resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${search_person}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20230424 20:16:27.259" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230424 20:16:27.259" level="FAIL">Element with locator 'id:pt1:atkfr1:0:rQuick:1:hp01Upl:UPsp1:hp01Sis:hp01Srh::content' not found.</msg>
+<status status="FAIL" starttime="20230424 20:16:21.948" endtime="20230424 20:16:27.262"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${search_person}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:27.262" endtime="20230424 20:16:27.262"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:21.947" endtime="20230424 20:16:27.263"/>
+</kw>
+<kw name="Enter name" library="Resources">
+<arg>${Enter_name}</arg>
+<status status="NOT RUN" starttime="20230424 20:16:27.263" endtime="20230424 20:16:27.264"/>
+</kw>
+<kw name="click name" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:27.265" endtime="20230424 20:16:27.266"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:21.943" endtime="20230424 20:16:27.266">Element with locator 'id:pt1:atkfr1:0:rQuick:1:hp01Upl:UPsp1:hp01Sis:hp01Srh::content' not found.</status>
+</test>
+<test id="s1-t4" name="create work relationship selection list" line="28">
+<kw name="click Communication" library="Resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${communication_info}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20230424 20:16:28.777" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:28.779" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230424 20:16:27.271" endtime="20230424 20:16:28.784"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${communication_info}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:28.784" endtime="20230424 20:16:28.784"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:27.270" endtime="20230424 20:16:28.784"/>
+</kw>
+<kw name="click addressess" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.786" endtime="20230424 20:16:28.786"/>
+</kw>
+<kw name="click legislative" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.786" endtime="20230424 20:16:28.786"/>
+</kw>
+<kw name="click citizenship" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.786" endtime="20230424 20:16:28.786"/>
+</kw>
+<kw name="click passport" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.787" endtime="20230424 20:16:28.787"/>
+</kw>
+<kw name="click family and emergency contacts" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.787" endtime="20230424 20:16:28.787"/>
+</kw>
+<kw name="click maintain managers" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.787" endtime="20230424 20:16:28.787"/>
+</kw>
+<kw name="click work relationship info" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.787" endtime="20230424 20:16:28.788"/>
+</kw>
+<kw name="click continue button" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.788" endtime="20230424 20:16:28.788"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:27.267" endtime="20230424 20:16:28.788">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</status>
+</test>
+<test id="s1-t5" name=" when and why" line="40">
+<kw name="select date icon" library="Resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${select_date_icon}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20230424 20:16:28.863" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:28.864" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230424 20:16:28.792" endtime="20230424 20:16:28.866"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_date_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:28.867" endtime="20230424 20:16:28.867"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:28.791" endtime="20230424 20:16:28.868"/>
+</kw>
+<kw name="click the date" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.869" endtime="20230424 20:16:28.869"/>
+</kw>
+<kw name="select Legal employer" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.870" endtime="20230424 20:16:28.870"/>
+</kw>
+<kw name="choose legal employer" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.870" endtime="20230424 20:16:28.870"/>
+</kw>
+<kw name="select action button" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.871" endtime="20230424 20:16:28.871"/>
+</kw>
+<kw name="choose action button" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.871" endtime="20230424 20:16:28.871"/>
+</kw>
+<kw name="scroll personal" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.871" endtime="20230424 20:16:28.872"/>
+</kw>
+<kw name="Non worker type" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.872" endtime="20230424 20:16:28.872"/>
+</kw>
+<kw name="select non worktype" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.872" endtime="20230424 20:16:28.872"/>
+</kw>
+<kw name="Continue" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.873" endtime="20230424 20:16:28.873"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:28.788" endtime="20230424 20:16:28.873">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</status>
+</test>
+<test id="s1-t6" name="Name" line="54">
+<kw name="click Edit button" library="Resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${edit_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20230424 20:16:28.908" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:28.909" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230424 20:16:28.882" endtime="20230424 20:16:28.917"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${edit_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:28.918" endtime="20230424 20:16:28.918"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:28.881" endtime="20230424 20:16:28.919"/>
+</kw>
+<kw name="enter last name" library="Resources">
+<arg>${L_NAME}</arg>
+<status status="NOT RUN" starttime="20230424 20:16:28.920" endtime="20230424 20:16:28.920"/>
+</kw>
+<kw name="enter first name" library="Resources">
+<arg>${F_NAME}</arg>
+<status status="NOT RUN" starttime="20230424 20:16:28.920" endtime="20230424 20:16:28.921"/>
+</kw>
+<kw name="Title" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.921" endtime="20230424 20:16:28.921"/>
+</kw>
+<kw name="Select Title" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.922" endtime="20230424 20:16:28.923"/>
+</kw>
+<kw name="Ok Button" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:28.923" endtime="20230424 20:16:28.923"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:28.877" endtime="20230424 20:16:28.924">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</status>
+</test>
+<test id="s1-t7" name="Biographical Info" line="69">
+<kw name="Bio edit" library="Resources">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 20:16:30.933" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230424 20:16:28.930" endtime="20230424 20:16:30.933"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${edit_button_bio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230424 20:16:30.936" level="INFO">Clicking element 'xpath://img[@title='Edit Biographical Info']'.</msg>
+<msg timestamp="20230424 20:16:30.945" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:30.945" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230424 20:16:30.933" endtime="20230424 20:16:30.947"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:28.929" endtime="20230424 20:16:30.948"/>
+</kw>
+<kw name="Select the date bio" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:30.948" endtime="20230424 20:16:30.948"/>
+</kw>
+<kw name="Click Date bio" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:30.948" endtime="20230424 20:16:30.949"/>
+</kw>
+<kw name="Ok bio" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:30.949" endtime="20230424 20:16:30.949"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:28.927" endtime="20230424 20:16:30.950">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</status>
+</test>
+<test id="s1-t8" name="National Identifiers" line="78">
+<kw name="Click the add button" library="Resources">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230424 20:16:32.956" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230424 20:16:30.952" endtime="20230424 20:16:32.956"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_symbol}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230424 20:16:32.958" level="INFO">Clicking element 'xpath://span[text()='Add']'.</msg>
+<msg timestamp="20230424 20:16:32.966" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:32.967" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230424 20:16:32.956" endtime="20230424 20:16:32.968"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:30.952" endtime="20230424 20:16:32.969"/>
+</kw>
+<kw name="Click the Country" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.969" endtime="20230424 20:16:32.970"/>
+</kw>
+<kw name="Select the country name" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.970" endtime="20230424 20:16:32.970"/>
+</kw>
+<kw name="scroll continue" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.970" endtime="20230424 20:16:32.970"/>
+</kw>
+<kw name="click Id type" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.971" endtime="20230424 20:16:32.971"/>
+</kw>
+<kw name="Select the id type" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.971" endtime="20230424 20:16:32.971"/>
+</kw>
+<kw name="Enter National Id num" library="Resources">
+<arg>${ID_num}</arg>
+<status status="NOT RUN" starttime="20230424 20:16:32.971" endtime="20230424 20:16:32.971"/>
+</kw>
+<kw name="Tick the primary box" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.972" endtime="20230424 20:16:32.972"/>
+</kw>
+<kw name="Ok Button National" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.972" endtime="20230424 20:16:32.972"/>
+</kw>
+<kw name="Continue personal details" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.972" endtime="20230424 20:16:32.973"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:30.951" endtime="20230424 20:16:32.973">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</status>
+</test>
+<test id="s1-t9" name="Communication Info" line="102">
+<kw name="Click add communiInfo" library="Resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${add_communiinfo}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20230424 20:16:32.985" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:32.985" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230424 20:16:32.976" endtime="20230424 20:16:32.987"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_communiinfo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230424 20:16:32.987" endtime="20230424 20:16:32.987"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:32.975" endtime="20230424 20:16:32.988"/>
+</kw>
+<kw name="Scroll down primary communi" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.988" endtime="20230424 20:16:32.988"/>
+</kw>
+<kw name="Email Type" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.988" endtime="20230424 20:16:32.988"/>
+</kw>
+<kw name="Select email type" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.989" endtime="20230424 20:16:32.989"/>
+</kw>
+<kw name="Enter the mailId" library="Resources">
+<arg>${MAIL_box}</arg>
+<status status="NOT RUN" starttime="20230424 20:16:32.989" endtime="20230424 20:16:32.989"/>
+</kw>
+<kw name="Field From date" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.989" endtime="20230424 20:16:32.989"/>
+</kw>
+<kw name="select From date" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.990" endtime="20230424 20:16:32.991"/>
+</kw>
+<kw name="Field To date" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.991" endtime="20230424 20:16:32.991"/>
+</kw>
+<kw name="select To date" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.991" endtime="20230424 20:16:32.991"/>
+</kw>
+<kw name="click Primary communi" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.991" endtime="20230424 20:16:32.991"/>
+</kw>
+<kw name="click Ok communi" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.992" endtime="20230424 20:16:32.992"/>
+</kw>
+<kw name="click continue communi" library="Resources">
+<status status="NOT RUN" starttime="20230424 20:16:32.992" endtime="20230424 20:16:32.992"/>
+</kw>
+<status status="FAIL" starttime="20230424 20:16:32.974" endtime="20230424 20:16:32.993">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20230424 20:16:10.271" endtime="20230424 20:16:32.994"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="8" skip="0" id="s1" name="TestCases">TestCases</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230424 20:16:11.109" level="ERROR">Error in file 'C:\Users\balua\PycharmProjects\OracleFusion\specs\TestCases.robot' on line 3: Importing library 'AllureReportingLibrary' failed: ModuleNotFoundError: No module named 'AllureReportingLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\balua\PycharmProjects\OracleFusion\venv\Lib\site-packages
+  C:\Users\balua\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\balua\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\balua\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\balua\AppData\Local\Programs\Python\Python310
+  C:\Users\balua\PycharmProjects\OracleFusion\venv</msg>
+<msg timestamp="20230424 20:16:28.777" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:28.863" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:28.908" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:30.945" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:32.966" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+<msg timestamp="20230424 20:16:32.985" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006BDCE3+50899]
+	(No symbol) [0x0064E111]
+	(No symbol) [0x00555588]
+	(No symbol) [0x0053D333]
+	(No symbol) [0x0059F4DB]
+	(No symbol) [0x005ADB33]
+	(No symbol) [0x0059B6F6]
+	(No symbol) [0x00577708]
+	(No symbol) [0x0057886D]
+	GetHandleVerifier [0x00923EAE+2566302]
+	GetHandleVerifier [0x009592B1+2784417]
+	GetHandleVerifier [0x0095327C+2759788]
+	GetHandleVerifier [0x00755740+672048]
+	(No symbol) [0x00658872]
+	(No symbol) [0x006541C8]
+	(No symbol) [0x006542AB]
+	(No symbol) [0x006471B7]
+	BaseThreadInitThunk [0x762F00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x773B7B8E+238]
+</msg>
+</errors>
+</robot>
